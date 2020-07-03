@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"> 
+<Class>
+  <Product>
+    <Name>Cheedsadse "Russian"</Name>
+    <Coordinates>
+      <X>100</X>
+      <Y>100</Y>
+    </Coordinates>
+    <CreationDate>2007-12-03T10:15:30</CreationDate>
+    <Price>85</Price>
+    <partNumber>11</partNumber>
+    <manufactureCost>150</manufactureCost>
+    <UnitOfMeasure>PCS</UnitOfMeasure>
+    <Organization>
+    <name>Klim</name>
+      <fullName>Plyasov</fullName>
+      <employeesCount>1111</employeesCount>
+    </Organization>
+  </Product>
+  <Product>
+    <Name>Cheedsadse "Chinese"</Name>
+    <Coordinates>
+      <X>104</X>
+      <Y>105</Y>
+    </Coordinates>
+    <CreationDate>2007-12-03T10:15:30</CreationDate>
+    <Price>44</Price>
+    <partNumber>51</partNumber>
+    <manufactureCost>1333</manufactureCost>
+    <UnitOfMeasure>CENTIMETERS</UnitOfMeasure>
+    <Organization>
+    <name>Egor</name>
+      <fullName>Zinovichev</fullName>
+      <employeesCount>144</employeesCount>
+    </Organization>
+  </Product>
+  
+</Class>
+

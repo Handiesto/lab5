@@ -1,0 +1,5 @@
+help 
+info 
+show
+update_id 1
+execute_script src/Lab5_Script.txt
