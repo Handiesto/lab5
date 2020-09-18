@@ -4,8 +4,17 @@ import java.util.Scanner;
 
 import src.commands.*;
 import src.exceptions.InvalidCommand;
-
+/**
+ * This is the main class of the application. Contains method "main".
+ * @author Handiesto
+ * @version 1.0.0
+ */
 public class Main {
+    /**
+     * Method main. The entry point of the application.
+     * @param args - the set of arguments.
+     * @throws Exception can throw a simple exception.
+     */
 
     public static void main(String[] args) throws Exception {
         Receiver receiver = new Receiver();
@@ -23,7 +32,11 @@ public class Main {
     }
 
 
-
+    /**
+     * Method for initializing and registering commands.
+     * @param receiver - control unit.
+     * @param handler - console input handler.
+     */
 
     public static void RegisterCommands(Receiver receiver, Invoker handler) {
         handler.Register("help", new Cmd_Help(receiver));
@@ -43,7 +56,11 @@ public class Main {
         handler.Register("count_greater_than_price", new Cmd_Count_Greater_Than_Price(receiver));
         handler.Register("print_ascending", new Cmd_Print_Ascending(receiver));
     }
-
+    /**
+     * Method for reading user input commands.
+     * @param userInput - user input scanner.
+     * @return returns next command in user input.
+     */
     private static String ReadUserInput(Scanner userInput) {
         String nextCommand;
         nextCommand = userInput.nextLine();

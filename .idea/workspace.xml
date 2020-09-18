@@ -6,7 +6,35 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94e26d61-f1b4-4ec3-b61b-d4006b1220b8" name="Default Changelist" comment="" />
+    <list default="true" id="94e26d61-f1b4-4ec3-b61b-d4006b1220b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/laba5_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/lab5_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laba5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/laba5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/laba5/src/others/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/laba5/src/others/Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_Add_If_Min.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_Add_If_Min.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_Clear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_Count_Greater_Than_Price.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_Count_Greater_Than_Price.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_Exit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_Insert_At.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_Insert_At.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_Print_Ascending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_Print_Ascending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_Remove_By_Id.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_Remove_By_Id.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_Save.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_Sum_Of_Manufacture_Cost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_Sum_Of_Manufacture_Cost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Cmd_UpdateId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Cmd_UpdateId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/constituents/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/constituents/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/constituents/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/constituents/Organization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/constituents/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/constituents/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/others/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/others/Input.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,14 +51,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1cXDO9Ir9lsh3tcmjBhxbZ615r3" />
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Lab5-master" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -86,18 +118,20 @@
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/src/main/Invoker.java</url>
-          <line>33</line>
-          <properties class="src.main.Invoker" method="Execute">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

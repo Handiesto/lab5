@@ -4,7 +4,9 @@ import org.jetbrains.annotations.NotNull;
 import src.exceptions.ValidationException;
 
 
-
+/**
+ * Class of organization of product.
+ */
 public class Organization {
     private static int lastId;
     @NotNull
@@ -15,12 +17,22 @@ public class Organization {
     private String fullName; //Значение этого поля должно быть уникальным, Строка не может быть пустой, Поле не может быть null
     @NotNull
     private long employeesCount; //Значение поля должно быть больше 0
-
+    /**
+     * Constructor
+     */
     public Organization() {
         id = lastId;
         lastId++;
 
     }
+    /**
+     * Constructor
+     * @param name - the name of organization
+     * @param fullName - the fullname of organization
+     * @param employeesCount - the employees count of organization
+     * @throws NullPointerException
+     * @throws ValidationException
+     */
 
     public Organization(String name, String fullName, long employeesCount) throws NullPointerException, ValidationException {
         if(name == null || name.equals("") || fullName == null || fullName.equals("")) {
@@ -36,7 +48,9 @@ public class Organization {
 
 
     }
-
+    /**
+     * Updates id of organization
+     */
     public void UpdateId() {
         id = lastId;
         lastId++;
@@ -71,7 +85,11 @@ public class Organization {
     public String getFullName() {return fullName;}
     public Long getemployeesCount() {return employeesCount;}
 
-
+    /**
+     * Method which compares coordinates with each other.
+     * @param aman - another coordinates.
+     * @return
+     */
     public int compareTo(Organization aman) {
         return (int) (this.employeesCount - aman.employeesCount);
     }

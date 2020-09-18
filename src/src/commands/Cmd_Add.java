@@ -17,7 +17,7 @@ public class Cmd_Add implements Command {
 
     /**
      * Simple constructor.
-     * @param receiver - the object of Collection Manager
+     * @param receiver - the object of receiver
      */
 
     public Cmd_Add(Receiver receiver) {
@@ -25,7 +25,7 @@ public class Cmd_Add implements Command {
     }
 
     /**
-     * Execute method add in Collection Manager.
+     * Execute method add in receiver.
      * @param args - the arguments that are passed to command
      * @throws ValidationException
      * @throws BadNumberOfArgsException

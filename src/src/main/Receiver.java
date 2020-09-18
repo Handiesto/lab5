@@ -16,12 +16,19 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Stack;
-
+/**
+ * Class which manages collection.
+ */
 public class Receiver {
     private Stack<Product> products;
     private LocalDateTime creationDate;
     private Scanner scanner;
     private boolean exit = false;
+    /**
+     * Constructor
+     * @throws ValidationException
+     * @throws IOException
+     */
 
     Receiver() throws ValidationException, IOException{
         Input input = new Input();
@@ -36,6 +43,7 @@ public class Receiver {
             products.push(product);
         }
     }
+
 
     private boolean ReadElement(String name, Product product) throws ValidationException {
         boolean success = true;
@@ -102,7 +110,11 @@ public class Receiver {
         }
         return success;
     }
-
+    /**
+     * Adds a new element to collection
+     * @param name - the name of element
+     * @throws ValidationException
+     */
     public void Add(String name) throws ValidationException {
         Product product = new Product();
         if (ReadElement(name, product)) {
@@ -111,7 +123,9 @@ public class Receiver {
             System.out.println("Some problems with adding a product.");
         }
     }
-
+    /**
+     * Shows info about collection
+     */
     public void Info() {
         try {
             Field stackField = Receiver.class.getDeclaredField("products");
@@ -125,14 +139,19 @@ public class Receiver {
             System.err.println("Problem with general class. Can not find type of class!");
         }
     }
-
+    /**
+     * Shows collection in string presentation
+     */
     public void Show() {
         Iterator<Product> it = products.iterator();
         while(it.hasNext()) {
             System.out.println(it.next().toString());
         }
     }
-
+    /**
+     * Updates id of element
+     * @param args
+     */
     public void Update_Id(String args) throws ValidationException {
         long id = Long.parseLong(args);
         String name = "";
@@ -142,7 +161,10 @@ public class Receiver {
             }
         }
     }
-
+    /**
+     * Removes an element by id
+     * @param args
+     */
     public void Remove_By_Id(String args) {
         Product redundant = new Product();
         long id = Long.parseLong((args));
@@ -153,7 +175,9 @@ public class Receiver {
         }
         products.remove(redundant);
     }
-
+    /**
+     * Clears collection
+     */
     public void Clear() {
         products.clear();
     }
@@ -162,7 +186,10 @@ public class Receiver {
         exit = true;
         scanner.close();
     }
-
+    /**
+     * Finds a min price of elements in collection
+     * @return the minimal value
+     */
     private long FindMin() {
         long min = products.peek().getPrice();
         for (Product p: products) {
@@ -172,7 +199,11 @@ public class Receiver {
         }
         return min;
     }
-
+    /**
+     * Adds an element to collection if it is min
+     * @param name - the name of element
+     * @throws ValidationException
+     */
     public void Add_If_Min(String name) throws ValidationException {
         Product product = new Product();
         if (ReadElement(name, product)) {
@@ -186,7 +217,11 @@ public class Receiver {
             System.out.println("Some problems with adding a product.");
         }
     }
-
+    /**
+     * Adds an element to collection
+     * @param args - the name of elements
+     * @throws ValidationException
+     */
     public void Insert_at(String args) throws ValidationException{
         Product p = new Product();
         long id = Long.parseLong((args));
@@ -203,16 +238,22 @@ public class Receiver {
         }
         p.Lastid();
     }
-
+    /**
+     * Just for saving in history command execute script
+     */
     public void Execute_Script() {
 
     }
 
-
+    /**
+     * sort collection
+     */
     public void Sort(){
         Collections.sort(products);
     }
-
+    /**
+     * sum of manufacture cost
+     */
     public void Sum_Of_Manufacture_Cost(){
         long sum_mc = 0;
         for (Product p: products) {
@@ -220,7 +261,11 @@ public class Receiver {
         }
         System.out.println("Sum of manufacture cost: "+sum_mc);
     }
-
+    /**
+     * Count Greater than Price
+     * @param args - the name of elements
+     * @throws ValidationException
+     */
     public void Count_Greater_Than_Price(String args){
         int k = 0;
         int price = Integer.parseInt((args));
@@ -237,7 +282,9 @@ public class Receiver {
             System.out.println(it.next().toString());
         }
     }
-
+    /**
+     * Shows the list of available commands
+     */
     public void Help() {
         System.out.println("//// HELP //// " +
                 "\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)" +
@@ -257,7 +304,10 @@ public class Receiver {
                 "\nprint_ascending : вывести элементы коллекции в порядке возрастания");
     }
 
-
+    /**
+     * Saves collection to file
+     * @throws IOException
+     */
 
     public void Save() throws IOException {
         String path;

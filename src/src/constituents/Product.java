@@ -4,7 +4,9 @@ package src.constituents;
 import src.exceptions.ValidationException;
 
 import java.time.LocalDateTime;
-
+/**
+ * Class of product.
+ */
 public class Product implements  Comparable<Product>{
     private static int lastIdProduct;
     private long id; //Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
@@ -17,13 +19,26 @@ public class Product implements  Comparable<Product>{
     private UnitOfMeasure unitOfMeasure; //Поле не может быть null
     private Organization manufacturer; //Поле не может быть null
 
-
+    /**
+     * Constructor
+     */
     public Product(){
         id = lastIdProduct;
         lastIdProduct++;
         creationDate = LocalDateTime.now();
     }
-
+    /**
+     * Constructor
+     * @param name - the name of product
+     * @param coordinates - the coordinates of product
+     * @param price - the price of product
+     * @param partNumber - the number of parts of product
+     * @param manufactureCost - the manufacrute cost of product
+     * @param unitOfMeasure - the unit of measure of product
+     * @param manufacturer - the organization of product
+     * @throws NullPointerException
+     * @throws ValidationException
+     */
     public Product(String name, Coordinates coordinates, int price, String partNumber, Long manufactureCost, UnitOfMeasure unitOfMeasure, Organization manufacturer) throws NullPointerException, ValidationException {
         if (name == null || name.equals("") || coordinates == null  || partNumber == null || partNumber.equals("") || manufactureCost == null || unitOfMeasure == null || manufacturer == null) {
             throw new NullPointerException();
@@ -47,6 +62,9 @@ public class Product implements  Comparable<Product>{
         this.manufacturer = manufacturer;
     }
 
+    /**
+     * Updates id of product
+     */
     public void UpdateId() {
         id = lastIdProduct;
         lastIdProduct++;
@@ -149,6 +167,11 @@ public class Product implements  Comparable<Product>{
 
 
 
+    /**
+     * Method which compares coordinates with each other.
+     * @param product - another coordinates.
+     * @return
+     */
     @Override
     public int compareTo(Product product){
         return (int) (this.id - product.id);

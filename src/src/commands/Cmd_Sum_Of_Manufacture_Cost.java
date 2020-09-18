@@ -7,8 +7,8 @@ package src.commands;
 
 
 /**
- * Class of the command Add.
- * This command adds a new element to collection.
+ * Class of the command sum of manufacture cost.
+ * This command sum of manufacture cost in collection.
  */
 
 public class Cmd_Sum_Of_Manufacture_Cost implements Command {
@@ -17,7 +17,7 @@ public class Cmd_Sum_Of_Manufacture_Cost implements Command {
 
     /**
      * Simple constructor.
-     * @param receiver - the object of Collection Manager
+     * @param receiver - the object of receiver
      */
 
     public Cmd_Sum_Of_Manufacture_Cost(Receiver receiver) {
@@ -25,7 +25,7 @@ public class Cmd_Sum_Of_Manufacture_Cost implements Command {
     }
 
     /**
-     * Execute method add in Collection Manager.
+     * Execute method add in receiver.
      * @param args - the arguments that are passed to command
      * @throws ValidationException
      * @throws BadNumberOfArgsException

@@ -7,8 +7,8 @@ package src.commands;
 
 
 /**
- * Class of the command Add.
- * This command adds a new element to collection.
+ * Class of the command Clear.
+ * This command Clear collection.
  */
 
 public class Cmd_Clear implements Command {
@@ -17,7 +17,7 @@ public class Cmd_Clear implements Command {
 
     /**
      * Simple constructor.
-     * @param receiver - the object of Collection Manager
+     * @param receiver - the object of receiver
      */
 
     public Cmd_Clear(Receiver receiver) {
@@ -25,7 +25,7 @@ public class Cmd_Clear implements Command {
     }
 
     /**
-     * Execute method add in Collection Manager.
+     * Execute method add in receiver.
      * @param args - the arguments that are passed to command
      * @throws ValidationException
      * @throws BadNumberOfArgsException
